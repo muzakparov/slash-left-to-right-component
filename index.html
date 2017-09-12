@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		.server-cloud{
+			position:relative;
+			width:1000px;
+			color: white;
+		}
+		
+		.server-cloud img{
+			width:100%;
+			margin: 0;
+			height:100%;
+			overflow:hidden;
+		}
+		
+		.server-cloud-trapezoid{
+			position: absolute;
+			bottom:0;
+			border-right: 1000px solid #0375FA;
+			border-top: 100px solid transparent;
+			height: 240px;
+			width: 0;
+			z-index:100;
+		}
+		
+		.server-cloud-text{
+			position:absolute;
+			color: red;
+			top:45%;
+			left:25%;
+			z-index:1000;
+			color: white;
+		}
+		
+	</style>
+  </head>
+  <body>
+	<div class="container">
+		<div class="server-cloud">
+			<img src="server-cloud.png" />
+			<div class="server-cloud-trapezoid">			
+			</div>			
+		</div>
+		<div class="server-cloud-text">
+			<p>TEXT GOES HERE...</p>
+		</div>
+	</div>
+  </body>
+</html>
